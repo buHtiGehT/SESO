@@ -102,37 +102,5 @@ html, body {
 
 <body>
 
-	<div id="nav">
-		<ul>
-			<li><a href="Games.asp">E-Sports</a></li>
-			<li><a href="Stream.asp">Stream</a></li>
-			<li><a href="Store.asp">Store</a></li>
-			<li><a href="Sponsors.asp">Sponsors</a></li>
-			<li><a href="News.asp">News</a></li>
-			<li><a href="Works.asp">About</a></li>
-			<li><a href="php/login.php">Login</a></li>
-		</ul>
-	</div>
-
-	<div id="MainImage">
-		<div id="LogoText">SESO</div>
-		<div id="SubMainText">A School Organized E-Sports Network</div>
-	</div>
-	<div>
-		<table id="FourImgTable" width=100%;
-			style="text-align: center; border-style: solid; border-color: white;">
-			<tr>
-				<td><a href="images/cloud_red_headset.png"><img
-						class="myTinyImages" src="images/cloud_red_headset.png"></a></td>
-				<td><a href="images/g5022.jpg"><img class="myTinyImages"
-						src="images/g5022.jpg"></a></td>
-				<td><a href="images/razer-blackwidow-chroma.jpg"><img
-						class="myTinyImages" src="images/razer-blackwidow-chroma.jpg"></a></td>
-				<td><a href="images/rl2455hm_regular_front_p_720px.jpg"><img
-						class="myTinyImages"
-						src="images/rl2455hm_regular_front_p_720px.jpg"></a></td>
-			</tr>
-		</table>
-	</div>
 </body>
 </html>
