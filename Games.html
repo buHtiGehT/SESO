@@ -4,121 +4,152 @@
 	rel='stylesheet' type='text/css'>
 <style>
 /*This fixes white space around header */
-html, body {
-	margin: 0;
-	padding: 0;
-}
-/*Main header changes, changes font opacity, and position of main elements*/
-#nav {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato-light', sans-serif;
-	font-weight: 400px;
-	text-align: center;
-	background-color: #2B2B2B;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    /*Main header changes, changes font opacity, and position of main elements*/
+    #nav {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato-light', sans-serif;
+        font-weight: 400px;
+        text-align: center;
+        background-color: #2B2B2B;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
-/*creates blocks*/
-#nav li {
-	display: inline-block;
-	/*I don't know what this does but without it our page breaks.*/
-}
+    /*creates blocks*/
+    #nav li {
+        display: inline-block;
+        /*I don't know what this does but without it our page breaks.*/
+    }
 
-#nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: 17191A;
-}
-/*Changes some more text formatting*/
-#nav li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-/*Hovering state */
-#nav li a:hover {
-	background-color: grey;
-}
-/*Logo for nav bar*/
-.logoHeader{
- width: 20px;
- height: auto;
- margin : 0px;
- padding: 0px;
- padding-top: 0px;
- padding-bottom: 0px;
- overflow: hidden;
- background-color: 17191A;
-}
-#navGames {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato-light', sans-serif;
-	font-weight: 400px;
-	text-align: center;
-	opacity: .9;
-	background-color: #2B2B2B;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
+    #nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: 17191A;
+    }
+    /*Changes some more text formatting*/
+    #nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /*Hovering state */
+    #nav li a:hover {
+        background-color: grey;
+    }
+    /*Logo for nav bar*/
+    .logoHeader{
+     width: 20px;
+     height: auto;
+     margin : 0px;
+     padding: 0px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     overflow: hidden;
+     background-color: 17191A;
+    }
+    #navGames {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato-light', sans-serif;
+        font-weight: 400px;
+        text-align: center;
+        opacity: .9;
+        background-color: #2B2B2B;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
-/*creates blocks*/
-#navGames li {
-	display: inline-block;
-	/*I don't know what this does but without it our page breaks.*/
-}
+    /*creates blocks*/
+    #navGames li {
+        display: inline-block;
+        /*I don't know what this does but without it our page breaks.*/
+    }
 
-#navGames ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #F3F3F3;
-}
-/*Changes some more text formatting*/
-#navGames li a {
-	display: block;
-	color: Gray;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-/*Hovering state */
-#navGames li a:hover {
-	background-color: #B4B4B4;
-}
+    #navGames ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #F3F3F3;
+    }
+    /*Changes some more text formatting*/
+    #navGames li a {
+        display: block;
+        color: Gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /*Hovering state */
+    #navGames li a:hover {
+        background-color: #B4B4B4;
+    }
+   
+/*Image is Shit, Sean Make a better version combining the three games*/    
+    #StartingImage {
+        width: 100%;
+        height: 720px;
+        position: relative;
+        background-image: url(images/SSCSGO.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    #GamestoPlay {
+        font-family: 'Lato-Light', sans-serif;
+        font-size: 100px;
+        text-align: center;
+        color: #2B2B2B;
+    }
 </style>
 
 </head>
 
 <body>
-
-
-<div id="nav">
+   
+    <div id="nav">
 		<ul>
-		<li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
+		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
 			<li><a href="Games.html">E-Sports</a></li>
 			<li><a href="Stream.html">Stream</a></li>
 			<li><a href="Store.asp">Store</a></li>
 			<li><a href="Sponsors.asp">Sponsors</a></li>
 			<li><a href="News.asp">News</a></li>
-			<li><a href="Works.asp">About</a></li>
+			<li><a href="Works.asp">About Us</a></li>
 			<li><a href="php/login.php">Login</a></li>
 		</ul>
 	</div>
-<div id="navGames">
-    <ul>
-        <li><a href="E-Sports-CSGO.html">CSGO</a></li>
-        <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
-        <li><a href="E-Sports-Dota2.html">Dota 2</a></li>
-    </ul>
-</div>
+    
+    
+    <div id="navGames">
+        <ul>
+            <li><a href="E-Sports-CSGO.html">CSGO</a></li>
+            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
+            <li><a href="E-Sports-Dota2.html">Dota 2</a></li>
+        </ul>
+    </div>
+    
+    <div id = "StartingImage"> 
+        <div id = "GamestoPlay">
+            WHICH GAME WILL YOU PLAY?
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
 	
 </body>
 </html>
