@@ -57,6 +57,43 @@ html, body {
  overflow: hidden;
  background-color: 17191A;
 }
+#navGames {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato-light', sans-serif;
+	font-weight: 400px;
+	text-align: center;
+	opacity: .9;
+	background-color: #2B2B2B;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/*creates blocks*/
+#navGames li {
+	display: inline-block;
+	/*I don't know what this does but without it our page breaks.*/
+}
+
+#navGames ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #F3F3F3;
+}
+/*Changes some more text formatting*/
+#navGames li a {
+	display: block;
+	color: Gray;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/*Hovering state */
+#navGames li a:hover {
+	background-color: #B4B4B4;
+}
 </style>
 
 </head>
@@ -76,7 +113,17 @@ html, body {
 			<li><a href="php/login.php">Login</a></li>
 		</ul>
 	</div>
-	
+	<div id="navGames">
+<ul>
+<li><a href="E-Sports_CSGO.html">CSGO
+</a>
+</li>
+<li><a href="E-Sports_League_Of_Legends.html"> League Of Legends</a>
+</li>
+<li><a href="E-Sports_Dota_2.html">Dota 2</a>
+</li>
+</ul>
+</div>
 	
 </body>
 </html>
