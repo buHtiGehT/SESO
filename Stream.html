@@ -87,12 +87,21 @@
             padding-top: 0px;
             padding-bottom: 0px;
         }
-    
+        #SesoMainTwitch {
+           width: 100%;
+           height: auto;
+        }
+        #MainInfo {
+            width: 100%;
+            height: auto;
+            background-color: lightgray;
+        }
     
     
     </style>
 </head>
 <body>
+    <!--MainNav-->
     <div id="nav">
 		<ul>
 		<li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
@@ -105,13 +114,25 @@
 			<li><a href="php/login.php">Login</a></li>
 		</ul>
 	</div>
-<div id="navGames">
-    <ul>
-        <li><a href="E-Sports-CSGO.html">CSGO</a></li>
-        <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
-        <li><a href="E-Sports-Dota2.html">Dota 2</a></li>
-    </ul>
-</div>
+    <!--SecondNav-->
+    <div id="navGames">
+        <ul>
+            <li><a href="Stream.html">SESO TV</a></li>
+            <li><a href="E-Sports-CSGO-Streams.html">CSGO Streams</a></li>
+            <li><a href="E-Sports-LeagueOfLegends-Streams.html"> League Of Legends Streams</a></li>
+            <li><a href="E-Sports-Dota2-Streams.html">Dota 2 Streams</a></li>
+        </ul>
+    </div>
+    <!--MainTwitchEmbed-->
+    <div id="SesoMainTwitch">
+        <iframe src="http://player.twitch.tv/?channel=sesotv" frameborder="0" scrolling="auto" height="900px" width=100%></iframe>
+        <a href="http://www.twitch.tv/sesotv?tt_medium=live_embed&tt_content=text_link"></a>
+    </div>
+    <!--TwitchInformationMain-->
+    
+
+    
+
     
     
 
