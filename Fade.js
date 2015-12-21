@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$("*").fadeIn();
+$("#FirstImage").slideDown();
 });
