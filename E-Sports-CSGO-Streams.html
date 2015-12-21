@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html>
 <head>
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700'
 	rel='stylesheet' type='text/css'>
@@ -47,14 +48,14 @@
     }
     /*Logo for nav bar*/
     .logoHeader{
-     width: 20px;
-     height: auto;
-     margin : 0px;
-     padding: 0px;
-     padding-top: 0px;
-     padding-bottom: 0px;
-     overflow: hidden;
-     background-color: 17191A;
+         width: 20px;
+         height: auto;
+         margin : 0px;
+         padding: 0px;
+         padding-top: 0px;
+         padding-bottom: 0px;
+         overflow: hidden;
+         background-color: 17191A;
     }
     #navGames {
         margin: 0;
@@ -116,50 +117,135 @@
     .submainactive {
         background-color: #B4B4B4;
         color: #B4B4B4;
+    }  
+    .tableimage {
+        width: 50%;
+        padding: 0px;
+        height: auto;
+        display: block;
+        float: left;
     }
-    
 </style>
-
 </head>
 
-<body>
-   
+<body> 
     <div id="nav">
 		<ul>
-		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
-			<li><a href="Games.html" class = "active">E-Sports</a></li>
-			<li><a href="Stream.html">Stream</a></li>
-			<li><a href="Store.asp">Store</a></li>
-			<li><a href="Sponsors.asp">Sponsors</a></li>
-			<li><a href="News.asp">News</a></li>
-			<li><a href="Works.asp">About Us</a></li>
+		    <li><a href="Seso_V1_FrontPage.html"><img class = "logoHeader" src = "images/PolarBearV1.png"></a></li>
+			<li><a href="Games.html">E-Sports</a></li>
+			<li><a href="Stream.html" class = "active">Stream</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Sponsors.html">Sponsors</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Works.html">About Us</a></li>
 			<li><a href="php/login.php">Login</a></li>
 		</ul>
-	</div>
-    
+    </div>
     
     <div id="navGames">
         <ul>
-            <li><a href="Games.html" class = "submainactive">Overview</a></li>
-            <li><a href="E-Sports-CSGO.html">CSGO</a></li>
-            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
-            <li><a href="E-Sports-Dota2.html">Dota 2</a></li>
+            <li><a href="Stream.html">SESO TV</a></li>
+            <li><a href="E-Sports-CSGO.html"class = "submainactive">CSGO Streams</a></li>
+            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends Streams</a></li>
+            <li><a href="E-Sports-Dota2.html">Dota 2 Streams</a></li>
         </ul>
-    </div>
-    
-    <div id = "StartingImage"> 
-        <div id = "GamestoPlay">
+    </div> 
+
+    <div id = "TopTwo">
+<!--Alpha Stream-->
+        <div id = "FirstImage">
+            <a href = "http://www.twitch.tv/sesocsgo"><img class = "tableimage" src = "images/TwitchCSGOS1.png"</a>
+        </div>
+<!--Bravo Stream-->
+        <div id = "SecondImage">
+            <a href = "http://www.twitch.tv/sesocsgo2"><img class = "tableimage" src = "images/TwitchCSGOS2.png"</a>
         </div>
     </div>
     
+    <div id = "BottomTwo">
+<!--Charlie Stream-->
+        <div id = "ThirdImage">
+            <a href = "http://www.twitch.tv/sesocsgo3"><img class = "tableimage" src = "images/TwitchCSGOS3.png"</a>
+        </div>
+<!--Delta Stream-->
+        <div id = "FourthImage">
+            <a href = "http://www.twitch.tv/sesocsgo4"><img class = "tableimage" src = "images/TwitchCSGOS4.png"</a>
+        </div>
+    
+        
+        
+    </div>      
     
     
     
     
     
-    
-    
-	
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
