@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700'
+	rel='stylesheet' type='text/css'>
+<style>
+    /*This fixes white space around header */
+    html, body {
+	   margin: 0;
+	   padding: 0;
+    }
+    /*Main header changes, changes font opacity, and position of main elements*/
+    #nav {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato-light', sans-serif;
+        font-weight: 400px;
+        text-align: center;
+        background-color: #2B2B2B;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    /*creates blocks*/
+    #nav li {
+	    display: inline-block;
+	/*I don't know what this does but without it our page breaks.*/
+    }
+    #nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: 17191A;
+    }
+    /*Changes some more text formatting*/
+    #nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; 
+    }
+    /*Hovering state */
+    #nav li a:hover {
+	    background-color: #d2d2d2;
+    }
+	 /*Logo for nav bar*/
+    .logoHeader{
+         width: 40px;
+         height: auto;
+         margin : 0px;
+         padding: 0px;
+         text-align: center;
+         padding-bottom: 0px;
+		 }
+		 #GlobalFooter {
+        list-style: none;
+        list-style-type: none;
+        background-color: #2B2B2B;
+        text-align: center;
+        padding: 5px;
+        font-family: 'Lato-light', sans-serif;
+        color: white;
+        padding-top: 5px;
+    }
+	</style>
+</head>
+<body>
+<!--GlobalNavBar-->
+	<div id="nav">
+		<ul>
+			<li><a href="Seso_V1_FrontPage.html" class = "active"><img class="logoHeader" src="images/PolarBearV2.1.png" style=" height: 20px; width: 20px;"></a></li>
+			<li><a href="Games.html">E-Sports</a></li>
+			<li><a href="Stream.html">Stream</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Sponsors.html">Sponsors</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Works.html">About Us</a></li>
+			<li><a href="php\login.php">Login</a></li>
+		</ul>
+	</div>
+	
+	<!--GlobalFooter-->
+    <footer id = "GlobalFooter">
+        SM Holdings Ltd. 2015©
+
+
+
+
+
+
+
+
+</body>
+</html>
