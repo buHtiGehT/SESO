@@ -2,15 +2,20 @@
 <!--Designed by Sebastian Marshall, Sebastian Morrissey, and Andrew Zhu in Palo Alto, California-->
 <html>
 <head>
+<!--Lato Light-->
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700'
 	rel='stylesheet' type='text/css'>
+<!--JavaScript-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="/jquery-1.11.3.min.js"></script>
+    
 <style>
-    /*This fixes white space around header */
+/*GLOBAL NAV BAR: This fixes white space around header*/
     html, body {
 	   margin: 0;
 	   padding: 0;
     }
-    /*Main header changes, changes font opacity, and position of main elements*/
+/*GLOBAL NAV BAR: Main header changes, changes font opacity, and position of main elements*/
     #nav {
         margin: 0;
         padding: 0;
@@ -22,10 +27,10 @@
         padding-top: 0px;
         padding-bottom: 0px;
     }
-    /*creates blocks*/
+/*GLOBAL NAV BAR:creates blocks*/
     #nav li {
 	    display: inline-block;
-	/*I don't know what this does but without it our page breaks.*/
+/*GLOBAL NAV BAR: Without this our page breaks*/
     }
     #nav ul {
         list-style-type: none;
@@ -34,7 +39,7 @@
         overflow: hidden;
         background-color: 17191A;
     }
-    /*Changes some more text formatting*/
+/*GLOBAL NAV BAR: text formatting*/
     #nav li a {
         display: block;
         color: white;
@@ -42,12 +47,12 @@
         padding: 14px 16px;
         text-decoration: none; 
     }
-    /*Hovering state */
+/*GLOBAL NAV BAR: Hovering State */
     #nav li a:hover {
         color: white;
     }
     
-    /*GeT_RighT image*/
+/*MAIN IMAGE: width, height, background*/
     #MainImage {
         width: 100%;
         height: 720px;
@@ -56,37 +61,265 @@
         background-position: center;
         background-size: cover;
     }
-
+/*MAIN IMAGE: SESO Text*/
     #LogoText {
         font-family: 'Lato-Light', sans-serif;
         font-size: 200px;
         color: white;
         text-align: center;
     }
-
+/*MAIN IMAGE: Sub Seso text*/
     #SubMainText {
         color: white;
         font-family: 'Lato-Light', sans-serif;
         font-size: 20px;
         text-align: center;
     }
-
-    #ImageOne {
-        width: 200px;
-        height: auto;
-        overflow: hidden;
+/*FOUR IMAGE TABLE: Signup*/
+    #FirstTableImage {
+        width: 25%;
+        height: 270px;
+        background-image: url(images/SignUpV1NewSize.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
     }
-
-    #ImageBar {
+    #RegisterNow {
         text-align: center;
-        border-collapse: collapse;
+        padding-top: 10px;
+        font-size: 40px;
     }
-
-    #FirstTableImages {
-        border-style: solid;
-        border-color: white;      
+    #SeasonNumber {
+        text-align: center;
+        padding-top: 5px;
     }
-
+    #LearnMoreSignupCSGO :link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #LearnMoreSignupCSGO a:hover {
+        text-decoration: underline;
+    }
+    #LearnMoreSignupCSGO a:visited {
+        color: dodgerblue;
+    }
+    #LearnMoreSignupLoL :link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #LearnMoreSignupLoL a:hover {
+        text-decoration: underline;
+    }
+    #LearnMoreSignupLoL a:visited {
+        color: dodgerblue;
+    }
+/*FOUR IMAGE TABLE: PlayNow*/
+    #SecondTableImage {
+        width: 25%;
+        height: 270px;
+        background-image: url(images/PlayNowV1NewSize.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
+    }
+    #PlayNow {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #PlayCSGO a:link{
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 40px;
+        padding-top: 35px;
+    }
+    #PlayCSGO a:hover {
+        text-decoration: underline;
+    }
+    #PlayCSGO a:visited {
+        color: dodgerblue;
+    }
+    #PlayLoL a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    #PlayLoL a:hover {
+        text-decoration: underline;
+    }
+    #PlayLol a:visited {
+        color:dodgerblue;
+    }
+/*FOUR IMAGE TABLE: Rankings*/
+    #ThirdTableImage {
+        width: 25%;
+        height: 270px;
+        background-image: url(images/RankingsV1NewSize.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
+    }
+    #Rankings {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #CSGORankings a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #CSGORankings a:hover {
+        text-decoration: underline;
+    }
+    #CSGORankings a:visited {
+        color: dodgerblue;
+    }
+    #LoLrankings a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #LoLrankings a:hover {
+        text-decoration: underline;
+    }
+    #LoLrankings a: visted {
+        color: dodgerblue;
+    }
+/*FOUR IMAGE TABLE: Products*/
+    #FourthTableImage {
+        width: 25%;
+        height: 270px;
+        background-image: url(images/ProductsV1NewSize.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
+    }
+    #Recommended {
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    #Razer a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #Razer a:hover {
+        text-decoration: underline;
+    }
+    #Razer a: visted {
+        color: dodgerblue;
+    }
+    #Corsair a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #Corsair a:hover {
+        text-decoration: underline;
+    }
+    #Corsair a: visted {
+        color: dodgerblue;
+    }
+    #Maingear a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #Maingear a:hover {
+        text-decoration: underline;
+    }
+    #Maingear a: visted {
+        color: dodgerblue;
+    }
+    
+/*FOUR IMAGE TABLE: Class for the image sizing*/
     .myTinyImages {
         width: 25%;
         height: auto;
@@ -120,6 +353,26 @@
         color: white;
         padding-top: 5px;
     }
+    .active {
+        background-color: grey;
+    }
+    #LearnMoreLink a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #LearnMoreLink a:hover {
+        text-decoration: underline;
+    }
+    #LearnMoreLink a:visited {
+        color: dodgerblue;
+    }
     
 </style>
 </head>
@@ -129,15 +382,9 @@
 <!--GlobalNavBar-->
 	<div id="nav">
 		<ul>
-<<<<<<< HEAD
-			<li><a href="Seso_V1_FrontPage.html"><img class="logoHeader" src="images/PolarBearV1.png" style=" height: 20px; width: 20px;"></a></li>
+			<li><a href="Seso_V1_FrontPage.html" class = "active"><img class="logoHeader" src="images/PolarBearV1.png" style=" height: 20px; width: 20px;"></a></li>
 			<li><a href="ESports.html">E-Sports</a></li>
 			<li><a href="LiveStreams.html">Stream</a></li>
-=======
-			<li><a href="Seso_V1_FrontPage.html" class = "active"><img class="logoHeader" src="images/PolarBearV2.1.png" style=" height: 20px; width: 20px;"></a></li>
-			<li><a href="Games.html">E-Sports</a></li>
-			<li><a href="Stream.html">Stream</a></li>
->>>>>>> origin/Website-(FrontEnd)
 			<li><a href="Store.html">Store</a></li>
 			<li><a href="Sponsors.html">Sponsors</a></li>
 			<li><a href="News.html">News</a></li>
@@ -148,23 +395,54 @@
 <!--LargeImage-->
 	<div id="MainImage">
 		<div id="LogoText">SESO</div>
-		<div id="SubMainText">A School Organized E-Sports Network</div>
+		<div id="SubMainText">A School E-Sports Organization</div>
+        <div id="LearnMoreLink">
+            <a href = "ESports.html">Learn More></a>
+        </div>
 	</div>
 <!--FourImageTable-->
 	<div id="FirstTableImage">
-        <a href="Signup.html"><img class="myTinyImages" src="images/V4SignUpUi.png"></a>
+        <div id="RegisterNow">Register Now</div>
+        <div id="SeasonNumber">for Season One</div>
+        <div id="LearnMoreSignupCSGO">
+            <a href = "RegisterCSGO.html">Learn More | CSGO</a>
+        </div>    
+        <div id="LearnMoreSignupLoL">
+            <a href = "RegisterLoL.html">Learn More | LoL</a>
+        </div>
     </div>
 	
-    <div id="SecondTableImage">	
-        <a href="PlayNow.html"><img class="myTinyImages" src="images/V4PlayNowUi.png"></a>
+    <div id="SecondTableImage">
+        <div id = "PlayNow">Play Now</div>
+        <div id = "PlayCSGO">
+            <a href = "csgologin.php">Play CSGO</a>
+        </div>
+        <div id = "PlayLoL">
+            <a href = "lollogin.php">Play LoL</a>
+        </div>
     </div>
     
     <div id="ThirdTableImage">
-        <a href="Leaderboard.html"><img class="myTinyImages" src="images/V4RankingsUi.png"></a>
+        <div id = "Rankings">Rankings</div>
+        <div id = "CSGORankings">
+            <a href = "CSGOrankings.html">CSGO | Leaderboards</a>
+        </div>
+        <div id = "LoLrankings">
+            <a href = "LoLRankings.html">LoL | Leaderboards</a>    
+        </div>
     </div>
     
     <div id="FourthTableImage">
-        <a href="Products"><img class="myTinyImages" src="images/V4ProductsUi.png"></a>
+        <div id = "Recommended">Recommended Products</div>
+        <div id = "Razer">
+            <a href = "razer.com/products">Razer - Peripherals</a>
+        </div>
+        <div id = "Corsair">
+            <a href = "corsair.com">Corsair - Peripherals</a>
+        </div>
+        <div id = "Maingear">
+            <a href = "maingear.com">Performance PC's</a>
+        </div>
     </div>
 <!--GlobalFooter-->
     <footer id = "GlobalFooter">
