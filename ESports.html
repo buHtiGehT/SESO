@@ -100,7 +100,7 @@
         width: 100%;
         height: 1080px;
         position: relative;
-        background-image: url(images/CSGOGamePageV3.png);
+        
         background-position: center;
         background-size: cover;
     }
@@ -108,7 +108,7 @@
         width: 100%;
         height: 900px;
         position: relative;
-        background-image: url(images/LoLPageV1.png);
+        
         background-position: center;
         background-size: cover;
     }
@@ -119,6 +119,27 @@
     .active {
         background-color: grey;
     }
+	#StartingImages{
+	 width: 50%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+	}
+	 #GlobalFooter {
+        list-style: none;
+        list-style-type: none;
+        background-color: #2B2B2B;
+        text-align: center;
+        padding: 5px;
+        font-family: 'Lato-light', sans-serif;
+        color: white;
+        padding-top: 5px;
+    }
+    
 </style>
 
 </head>
@@ -127,6 +148,7 @@
    
     <div id="nav">
 		<ul>
+<<<<<<< HEAD
 		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
 			<li><a href="Games.html" class = "active">E-Sports</a></li>
 			<li><a href="LiveStreams.html">Stream</a></li>
@@ -134,6 +156,18 @@
 			<li><a href="Sponsors.asp">Sponsors</a></li>
 			<li><a href="News.asp">News</a></li>
 			<li><a href="Works.asp">About Us</a></li>
+=======
+
+	
+
+		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV2.1.png"></a></li>
+			<li><a href="ESports.html" class = "active">E-Sports</a></li>
+			<li><a href="LiveStreams.html">Stream</a></li>
+			<li><a href="Store.html">Store</a></li>
+			<li><a href="Sponsors.html">Sponsors</a></li>
+			<li><a href="News.html">News</a></li>
+			<li><a href="Works.html">About Us</a></li>
+>>>>>>> origin/Website-(FrontEnd)
 			<li><a href="php/login.php">Login</a></li>
 		</ul>  
 	</div>
@@ -144,16 +178,23 @@
             <li><a href="Games.html" class = "submainactive">Overview</a></li>
             <li><a href="E-Sports-CSGO.html">CSGO</a></li>
             <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
-            <li><a href="E-Sports-Dota2.html">Dota 2</a></li>
+            
         </ul>
     </div>
     
-    <div id = "StartingImages"> 
-        <div id = "CsgoPage">
-        </div>
-        <div id = "LoLPage">
-        </div>
+    <div> 
+        <a href="E-Sports-CSGO.html">
+		<img src="images/CSGOGamePageV4.jpg" id = "StartingImages">
+		</a>
+		<a href="E-Sports-LeagueOfLegends.html">
+		<img src="images/LolPageV2.jpg" id = "StartingImages">
+		</a>
+       
     </div>
+	<!--GlobalFooter-->
+    <footer id = "GlobalFooter">
+        SM Holdings Ltd. 2015©
+    </footer>
     
     
     
