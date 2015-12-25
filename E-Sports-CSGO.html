@@ -43,6 +43,40 @@
     #nav li a:hover {
         background-color: grey;
     }
+    #NavCSGO {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato-light', sans-serif;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-weight: 400px;
+    }
+    #NavCSGO li {
+        display: inline-block;
+    }
+    #NavCSGO li a {
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    #NavCSGO ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        text-align: center;
+    }
+    #NavCSGO ul li {
+        display: inline-block;
+    }
+    #CSGOBrand li a:link {
+        color: black;
+        text-decoration: none;
+    }
+    #CSGOBrand li a: visited {
+        color: black;
+        text-decoration: none;
+    }
     /*Logo for nav bar*/
     .logoHeader{
          width: 20px;
@@ -54,46 +88,9 @@
          overflow: hidden;
          background-color: 17191A;
     }
-    #navGames {
-        margin: 0;
-        padding: 0;
-        font-family: 'Lato-light', sans-serif;
-        font-weight: 400px;
-        text-align: center;
-        opacity: .9;
-        background-color: #2B2B2B;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    /*creates blocks*/
-    #navGames li {
-        display: inline-block;
-        /*I don't know what this does but without it our page breaks.*/
-    }
-
-    #navGames ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #F3F3F3;
-    }
-    /*Changes some more text formatting*/
-    #navGames li a {
-        display: block;
-        color: gray;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    /*Hovering state */
-    #navGames li a:hover {
-        background-color: #B4B4B4;
-    }
     .submainactive {
-    background-color: #B4B4B4;
-    color: #B4B4B4;
+        background-color: #B4B4B4;
+        color: #B4B4B4;
     }
 </style>        
 </head>
@@ -112,24 +109,19 @@
 		</ul>  
 	</div>
     
-    <div id="navGames">
+    <div id = "NavCSGO">
         <ul>
-            <li><a href="ESports.html">Overview</a></li>
-            <li><a href="E-Sports-CSGO.html" class = "submainactive">CSGO</a></li>
-            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>     
+            <li id = "CSGOBrand"><a href = "E-Sports-CSGO.html">CSGO</a></li>
+            <li><a href = "E-Sports-CSGO-register.html">Register</a></li>
+            <li><a href = "E-Sports-CSGO-client.html">Client</a></li>
+            <li><a href = "E-Sports-CSGO-techspecs.html">Tech Specs</a></li>
+            <li><a href = "E-Sports-CSGO-design.html">Design</a></li>
         </ul>
     </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <div id = "FirstTable">
+        <div id = "First Column"> </div>
+    </div>
 </body>
 
 
