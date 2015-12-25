@@ -96,21 +96,98 @@
     }
    
 /*Image is Shit, Sean Make a better version combining the three games*/    
-    #CsgoPage {
+    #CSGOPreviewImage {
         width: 100%;
-        height: 1080px;
-        position: relative;
-        
+        height: 990px;
+        background-image: url(images/CSGOGamePageV5.png);
         background-position: center;
-        background-size: cover;
+        background-size: auto;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+        color: white;
     }
-    #LoLPage {
+    #CSGOPreviewText {
+        font-family: 'Lato-light', sans-serif;
+        color: black;
+        font-size: 150px;
+        text-align: center;
+    }
+    #CSGOPreviewSubText {
+        color: darkgray;
+        text-align: center;
+        font-size: 20px;
+    }
+    #CSGOPreviewSubSubText {
+        color: darkgray;
+        text-align: center;
+        font-size: 30px;
+    }
+    #CSGOPreviewLearnMore a:link {
+        align-content: center;
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    #CSGOPreviewLearnMore a:hover {
+        text-decoration: underline;
+    }
+    #CSGOPreviewLearnMore a:visited {
+        color: dodgerblue;
+    }
+    #LoLPreviewImage {
         width: 100%;
-        height: 900px;
-        position: relative;
-        
+        height: 990px;
+        background-image: url(images/LoLGamePage.png);
         background-position: center;
-        background-size: cover;
+        background-size: auto;
+        display: block;
+        float: left;
+        border: 1px;
+        border-color: black;
+        font-family: 'Lato-Light', sans-serif;
+    }
+    #LoLPreviewText {
+        font-family: 'Lato-light', sans-serif;
+        color: black;
+        font-size: 150px;
+        padding-left: 200px;
+        padding-top: 200px;
+    }
+    #LoLPreviewSubtext {
+        color: darkgray;
+        font-size: 20px;
+        padding-left: 300px;
+    }
+    #LoLPreviewSubSubText {
+        color: darkgray;
+        font-size: 30px;
+        padding-left: 100px;
+    }
+    #LoLPreviewLearnMore a:link {
+        font-family: 'Lato-Light', sans-serif;
+        color: dodgerblue;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        padding-left: 230px;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    #LoLPreviewLearnMore a:hover {
+        text-decoration: underline;
+    }
+    #LoLPreviewLearnMore a:visited {
+        color: dodgerblue;
     }
     .submainactive {
         background-color: #B4B4B4;
@@ -148,48 +225,41 @@
    
     <div id="nav">
 		<ul>
-<<<<<<< HEAD
 		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
-			<li><a href="Games.html" class = "active">E-Sports</a></li>
-			<li><a href="LiveStreams.html">Stream</a></li>
-			<li><a href="Store.asp">Store</a></li>
-			<li><a href="Sponsors.asp">Sponsors</a></li>
-			<li><a href="News.asp">News</a></li>
-			<li><a href="Works.asp">About Us</a></li>
-=======
-
-	
-
-		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV2.1.png"></a></li>
-			<li><a href="ESports.html" class = "active">E-Sports</a></li>
+			<li><a href="ESports.html">E-Sports</a></li>
 			<li><a href="LiveStreams.html">Stream</a></li>
 			<li><a href="Store.html">Store</a></li>
 			<li><a href="Sponsors.html">Sponsors</a></li>
 			<li><a href="News.html">News</a></li>
 			<li><a href="Works.html">About Us</a></li>
->>>>>>> origin/Website-(FrontEnd)
 			<li><a href="php/login.php">Login</a></li>
 		</ul>  
 	</div>
     
-    
     <div id="navGames">
         <ul>
-            <li><a href="Games.html" class = "submainactive">Overview</a></li>
+            <li><a href="ESports.html" class = "submainactive">Overview</a></li>
             <li><a href="E-Sports-CSGO.html">CSGO</a></li>
-            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>
-            
+            <li><a href="E-Sports-LeagueOfLegends.html"> League Of Legends</a></li>     
         </ul>
     </div>
     
-    <div> 
-        <a href="E-Sports-CSGO.html">
-		<img src="images/CSGOGamePageV4.jpg" id = "StartingImages">
-		</a>
-		<a href="E-Sports-LeagueOfLegends.html">
-		<img src="images/LolPageV2.jpg" id = "StartingImages">
-		</a>
-       
+    <div id = "CSGOPreviewImage">
+        <div id = "CSGOPreviewText">CSGO</div>
+        <div id = "CSGOPreviewSubText">128 Tick Servers</div>
+        <div id = "CSGOPreviewSubSubText">Fast. Reliable. Redefining.</div>
+        <div id = "CSGOPreviewLearnMore">
+            <a href = "E-Sports-CSGO.html">-Learn More-</a>
+        </div>
+    </div>
+    
+    <div id = "LoLPreviewImage">
+        <div id = "LoLPreviewText">LoL</div>
+        <div id = "LoLPreviewSubtext">5v5's.</div>
+        <div id = "LoLPreviewSubSubText">Play in League against other schools</div>
+        <div id = "LoLPreviewLearnMore">
+            <a href = "E-Sports-LoL.html">-Learn More-</a>
+        </div>
     </div>
 	<!--GlobalFooter-->
     <footer id = "GlobalFooter">
