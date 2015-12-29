@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700'
+nnn               rel='stylesheet' type='text/css'>
 <style>  
     html, body {
         margin: 0;
@@ -41,7 +43,7 @@
     }
     /*Hovering state */
     #nav li a:hover {
-        background-color: grey;
+        color:grey;
     }
     #NavCSGO {
         margin: 0;
@@ -50,6 +52,8 @@
         padding-top: 0;
         padding-bottom: 0;
         font-weight: 400px;
+        border-top: 1px solid black; 
+        border-bottom: 1px solid grey;
     }
     #NavCSGO li {
         display: inline-block;
@@ -58,6 +62,10 @@
         padding: 14px 16px;
         text-decoration: none;
         display: block;
+        color: black;
+    }
+    #NavCSGO li a:hover {
+        color:dodgerblue;
     }
     #NavCSGO ul {
         margin: 0;
@@ -92,6 +100,70 @@
         background-color: #B4B4B4;
         color: #B4B4B4;
     }
+    #FirstTitle {
+        width: 50%;
+        height: 620px;
+        font-family: 'Lato-light', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        background-color: white;
+        overflow: hidden;
+        float: left;
+        padding-top: 30px;
+    }
+    #FirstImage{
+        width: 50%;
+        height: 650px;
+        background-image: url(images/_sfm__cs_go_cinematic_poster_by_ohemin-d8pbbwc.png);
+        background-position: center;
+        background-size: cover;
+        float: left;
+        overflow: hidden;
+    }
+    #FirstDescription {
+        font-size: 25px;
+        color: grey;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #FirstParagraph {
+        text-align: center;
+        font-size: 25px;
+        color: dimgray;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 20px;
+    }
+    #SecondImage {
+        width: 50%;
+        height: 650px;
+        background-image: url(images/128tick.png);
+        background-position: center;
+        background-size: cover;
+        float: left;
+        overflow: hidden;
+    }
+    #SecondTitle {
+        width: 50%;
+        height: 630px;
+        font-family: 'Lato-light', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        background-color: #F5F5F5;
+        overflow: hidden;
+        float: left;
+        padding-top: 20px;
+    }
+    #SecondDescription {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    #SecondParagraph {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 </style>        
 </head>
     
@@ -108,20 +180,65 @@
 			<li><a href="php/login.php">Login</a></li>
 		</ul>  
 	</div>
-    
+<!--CSGO NavBar-->   
     <div id = "NavCSGO">
         <ul>
             <li id = "CSGOBrand"><a href = "E-Sports-CSGO.html">CSGO</a></li>
-            <li><a href = "E-Sports-CSGO-register.html">Register</a></li>
             <li><a href = "E-Sports-CSGO-client.html">Client</a></li>
             <li><a href = "E-Sports-CSGO-techspecs.html">Tech Specs</a></li>
             <li><a href = "E-Sports-CSGO-design.html">Design</a></li>
+            <li id = "CSGORegister"><a href = "E-Sports-CSGO-register.html">Register</a>                </li>
         </ul>
     </div>
+<!--FirstBar-->
+    <div id = "FirstTitle">
+        Counter Strike: Global Offensive
     
-    <div id = "FirstTable">
-        <div id = "First Column"> </div>
+        <div id = "FirstDescription">   
+            Have you ever wanted to be able to play Counter Strike under the banner of your school just like people play traditional sports?   
+        
+        <div id = "FirstParagraph">
+            The idea behind our system is simple: A premier match-making service that can unite school E-Sports teams into organized local leagues. This is the next step to competive E-Sports being accepted as "real sports" by society. Our Servers now are 128 tick, in addition to teamspeak servers all at a low cost registration fee by the school or by a team. This is the next step of E-Sports, take it with us, at SESO.    
+        </div>
+    </div>    
     </div>
+        
+    <div id = "FirstImage">
+    </div>
+<!--Second bar-->
+    <div id = "SecondImage">
+    </div>
+    
+    <div id = "SecondTitle">
+        128 tick
+    
+        <div id = "SecondDescription">
+        More than just double the ticks; it's smooth.
+    
+        <div id = "SecondParagraph">
+        The hours you spend practicing on 128 tick headshot servers, and the hours you spend lining up your smokes on the 128 tick server practice map, now can pay off without ESEA or CEVO.         
+        </div>
+        
+        
+        
+        
+        
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 
 
