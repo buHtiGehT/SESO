@@ -1,0 +1,24 @@
+<script> 
+var userdatabase = [
+    ["mickeymouse", "Daisy<3"],
+    ["ADMIN", "password"],
+]; 
+var ByID = function(element_id) {
+    return document.getElementById(element_id); 
+}    
+    
+var stuff = function(element) {
+    if(event.keyCode == 13) {
+        alert(element.value);
+        var uName = ByID("username").value;
+        var pWord = ByID("password").value;
+        document.body.innerHTML += "using "+uName+" with password "+pWord;
+        if (uName == userdatabase [0][0] && pWord ==  userdatabase [0] [1]) {
+            document.body.innerHTML += "<br>Welcome " +uName+"!!!!!";
+        }
+    }
+}
+</script>
+
+<div><input id = "username" placeholder = "username"></input></div>
+<div><input id = "password" placeholder = "password" onkeydown = "stuff(this)"></input></div>
