@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+ 
+    
 <style>  
+   
     html, body {
         margin: 0;
         padding: 0;
@@ -16,6 +21,7 @@
         background-color: #2B2B2B;
         padding-top: 0px;
         padding-bottom: 0px;
+        
     }
 
     /*creates blocks*/
@@ -52,6 +58,7 @@
         font-weight: 400px;
         border-top: 1px solid black; 
         border-bottom: 1px solid grey;
+    
     }
     #NavCSGO li {
         display: inline-block;
@@ -262,10 +269,26 @@
         padding-right: 70px;
         padding-top: 20px;
     }
+    .fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    .fixed .nav-inner{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #2B2B2B;
+    }
+    .nav-placeholder{
+        margin: 0 0 40px 0;
+    }
 </style>        
 </head>
     
 <body>
+    <div class="status"></div>
     <div id="nav">
 		<ul>
 		    <li><a href="Seso_V1_FrontPage.html"><img class="logoHeader"src="images/PolarBearV1.png"></a></li>
